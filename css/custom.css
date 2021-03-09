@@ -212,7 +212,8 @@ section{
 
 .card-content{
     position: relative;
-    bottom: 0;
+    height: 100%;
+    padding-bottom: 50px;
 }
 
 .img-container{
@@ -269,6 +270,8 @@ section{
     font-size: 1.5rem;
     text-align: justify;
     padding: 5px 15px;
+    margin-bottom: 0;
+    position: relative;
 }
 
 .post-content p{
@@ -276,51 +279,21 @@ section{
 }
 
 .my-btn{
-    display: block;
-    position: relative;
-    bottom: 0;
-    border-radius: 4px;
-    color: #000;
-    border: none;
-    padding: 20px;
-    width: 200px;
-    transition: all .5s;
-    font-size: 1.5rem;
-}
-
-.my-btn span{
     cursor: pointer;
     display: inline-block;
-    position: relative;
-    /* transition: all .5s; */
-}
-
-.my-btn span:after{
-    content: '≫';
-    position: absolute;
-    opacity: 1;
-    top: 0;
-    right: -30px;
-    /* transition: all .5s; */
+    color: #000;
+    width: 200px;
+    transition: all .3s;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .my-btn:hover{
-    background-color: #e6a42c;
-    color: #000;
-    border-color: #fff;
-}
-
-.my-btn:hover span{
-    /* padding-right: 25px; */
-}
-
-.my-btn:hover span:after{
-    opacity: 1;
-    right: -30px;
+    color: #e6a42c;
+    text-decoration: none;
 }
 
 .first-btn{
-    padding: 10px 5px;
     font-size: 1.8rem;
     font-weight: 700;
     color: #606060;
@@ -328,9 +301,37 @@ section{
 }
 
 .first-btn:hover{
-    background-color: #fff;
     color: #e6a42c;
     text-decoration: none;
+}
+
+.second-btn{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    transition: color .3s;
+    color: #606060;
+    margin-bottom: 10px;
+}
+
+.second-btn:hover{
+    color: #e6a42c;
+    text-decoration: none;
+}
+
+@media (max-width: 575.98px){
+    .second-btn{
+        display: block;
+        width: 100%;
+    }
 }
 
 .shop-item{
