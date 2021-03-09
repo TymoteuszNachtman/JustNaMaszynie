@@ -16,17 +16,19 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 align-center">
-                    <img src="images/logo-justyna.png" alt="Justyna Wójcik" class="logo">
+                    <a href="#">
+                        <img src="images/logo-justyna.png" alt="Justyna Wójcik" class="logo">
+                    </a>
                 </div>
-                
             </div>
         </div>
     </div>
     <div id="nav" class="sticky-top pt-3 pb-3">
         <ul class="nav justify-content-center">
-            <li class="nav-item"><a href="#" class="nav-link">O mnie</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Warsztaty stacjonarne</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Tutoriale online</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
+            <li class="nav-item"><a href="omnie.html" class="nav-link">O mnie</a></li>
+            <li class="nav-item"><a href="stacjonarne.html" class="nav-link">Kursy stacjonarne</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Nauka online</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Sklep</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
@@ -61,16 +63,32 @@
                     <div class="mb-5 col-md-6 col-sm-12 pr-5 align-center"><img src="images/warsztaty_stacjonarne.png" alt="" class="modal-img"></div>
                     <div class="mb-5 col-md-6 col-sm-12 pl-5 row justify-content-center align-items-center">
                         <div class="small-column">
-                            <h3 class="align-center">Kursy w tygodniu</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus quia earum, tempora dolores labore cum molestiae porro similique! Cum esse quos, repudiandae tempore consequatur veritatis nobis dicta illum natus.</p>
-                            <a href="#" class="my-btn first-btn"><span>Czytaj więcej</span></a>
+                            <h3 class="align-center">Kursy stacjonarne</h3>
+                            <p>
+                                <ul>
+                                    <li>Lubisz uczyć się na żywo?</li>
+                                    <li>Potrzebujesz zgrać terminy z napiętym grafikiem?</li>
+                                    <li>A może chcesz dopasować program zajęć idealnie pod Ciebie?</li>
+                                </ul>
+                                <p class="mt-5 mb-5">To świetnie, bo dokładnie taki tryb nauki Ci oferuję 🙂</p>
+                            </p>
+                            <p style="display:none;">Wybierz termin, który Ci pasuje i ustal ze mną zakres. Pracuj w małej grupie, ale niezależnie od pozostałych uczestniczek.</p>
+                            <a href="#" class="my-btn first-btn"><span>Dowiedz się więcej</span></a>
                         </div>
                     </div>
-                    <div class="mt-5 col-md-6 col-sm-12 pl-5 row justify-content-center align-items-center">
+                    <div class="col-12 odstep"></div>
+                    <div class="mt-6 col-md-6 col-sm-12 pl-5 row justify-content-center align-items-center">
                         <div class="small-column">
-                            <h3 class="align-center">Kursy w tygodniu</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus quia earum, tempora dolores labore cum molestiae porro similique! Cum esse quos, repudiandae tempore consequatur veritatis nobis dicta illum natus.</p>
-                            <a href="#" class="my-btn first-btn"><span>Czytaj więcej</span></a>
+                            <h3 class="align-center">Nauka online</h3>
+                            <p>
+                                <ul>
+                                    <li>Wolisz pracować w domowym zaciszu? </li>
+                                    <li>Szyjesz na raty i potrzebujesz szczegółowych materiałów online?</li>
+                                    <li>A może interesują Cię prywatne, godzinne konsultacje?</li>
+                                </ul>
+                                <p class="mt-5 mb-5">Sprawdź różne możliwości nauki zdalnej.</p>
+                            </p>
+                            <a href="#" class="my-btn first-btn"><span>Dowiedz się więcej</span></a>
                         </div>
                     </div>
                     <div class="mt-5 col-md-6 col-sm-12 pr-5 align-center"><img src="images/warsztaty_stacjonarne2.png" alt="" class="modal-img"></div>
@@ -85,8 +103,21 @@
         <section class="omnie" id="omnie">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 align-center">
+                    <!-- <div class="col-12 align-center">
                         <img src="images/o_mnie.png" alt="O mnie" class="omnie-img">
+                    </div> -->
+                    <div class="col-3 mx-5 align-self-center">
+                        <img src="images/o-mnie-foto.png" class="w-100">
+                    </div>
+                    <div class="col-md-6 col-sm-12 pl-5 pr-5 align-self-center">
+                        <h3>
+                            Dzień dobry
+                        </h3>
+                        <p>Mam na imię Justyna i szyję od 3 roku życia. Moja babcia była krawcową i to ona rozwijała we mnie kreatywność i zamiłowanie do rękodzieła.
+                            Moja pierwsza maszyna była ręczna, na korbkę, ale nie wystarczała i szybko zamieniłam ją na ciężkiego, metalowego łucznika.
+                            Chcesz mnie lepiej poznać?
+                        </p>
+                        <a href="#" class="my-btn first-btn">Zapraszam :)</a>
                     </div>
                 </div>
             </div>
@@ -95,40 +126,69 @@
 
         <section class="blog" id="blog">
             <div class="container mx-auto row justify-content-center">
-                <h3 class="section-title align-center mb-5">Chcesz więcej - zajrzyj na bloga!</h3>
+                <h3 class="section-title align-center">Chcesz więcej - zajrzyj na bloga!</h3>
                 <div class="row justify-content-center align-items-stretch">
-                    <div class="mt-3 mb-3 col-lg-4 col-md-6 col-sm-12 align-center">
+                    <div class="mt-3 mb-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 align-center">
                         <div class="card mx-auto">
                             <div class="card-img-top img-container bg-item bg-item-1">
                                 <!-- <img src="images/post_1.jpg" alt="Artykuł" class="img-fluid portrait-img"> -->
                             </div>
                             <div class="card-content align-center">
-                                <h4 class="post-title">Dzień dobry to jest mój pierwszy najlepsiejszy post na świecie</h4>
-                                <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi inventore iste aliquam impedit sequi dignissimos animi. Dolor quo harum blanditiis, culpa veritatis asperiores. In odit aliquid sint enim repellat?</p>
+                                <h4 class="post-title">Jakie akcesoria na szyciowy start?</h4>
+                                <div class="post-content">
+                                    <p>Masz już maszynę do szycia i przyszła pora na skompletowanie przybornika? Zobacz co warto kupić na start.</p>
+                                    <p>Zacznę od tego, że wszystkie akcesoria krawieckie warto kupić w pasmanterii lub specjalistycznym sklepie, np. z materiałami lub maszynami do szycia. Jeśli zakupicie przybory w supermarkecie może okazać się, że wyrzucicie je do śmietnika. Często zawierają tępe akcesoria, jak szpilki albo nożyczki, które uszkodzą Wam materiał lub nici, które są przeznaczone do szycia ręcznego, nie maszynowego. Nici takie będą się stale zrywały. To jeden z głównych problemów początkujących szyjących.</p>
+                                </div>
                                 <a href="#" class="my-btn mx-auto align-center"><span>Czytaj dalej</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-3 mb-3 col-lg-4 col-md-6 col-sm-12 align-center">
+                    <div class="mt-3 mb-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 align-center">
                         <div class="card mx-auto">
                             <div class="card-img-top img-container bg-item bg-item-2">
                                 <!-- <img src="images/post_2.jpg" alt="Artykuł" class="img-fluid portrait-img"> -->
                             </div>
                             <div class="card-content align-center">
-                                <h4 class="post-title">Tytuł posta</h4>
-                                <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi inventore iste aliquam impedit sequi dignissimos animi. Dolor quo harum blanditiis, culpa veritatis asperiores. In odit aliquid sint enim repellat?</p>
+                                <h4 class="post-title">Less is more - minimalizm w szafie</h4>
+                                <div class="post-content">
+                                    <p>Gdy w ostatnim czasie przechadzałam się po galerii handlowej zdałam sobie sprawę, że jest tu tyle kolorów, fasonów i kształtów, że mimo, iż zwykle wiem do czego dążę, w poszukiwaniu odpowiednich elementów garderoby, czułam się pogubiona. </p>
+                                    <p>Moje myśli krążyły wokół kilku pytań, które sobie zadawałam: </p>
+                                    <ul>
+                                        <li>Co podkreśli moje atuty?</li>
+                                        <li>Co lubię, a czego nie</li>
+                                        <li>Co będzie modne tej jesieni?</li>
+                                        <li>Czy mój budżet ucierpi na tych zakupach?</li>
+                                    </ul>
+                                </div>
                                 <a href="#" class="my-btn mx-auto align-center"><span>Czytaj dalej</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-3 mb-3 col-lg-4 col-md-6 col-sm-12 align-center">
+                    <div class="mt-3 mb-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 align-center">
                         <div class="card mx-auto">
                             <div class="card-img-top img-container bg-item bg-item-3">
                                 <!-- <img src="images/post_3.jpg" alt="Artykuł" class="img-fluid portrait-img"> -->
                             </div>
                             <div class="card-content align-center">
-                                <h4 class="post-title">Tytuł posta</h4>
-                                <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi inventore iste aliquam impedit sequi dignissimos animi. Dolor quo harum blanditiis, culpa veritatis asperiores. In odit aliquid sint enim repellat?</p>
+                                <h4 class="post-title">Skąd biorę wykroje krawieckie?</h4>
+                                <div class="post-content">
+                                    <p>Na co dzień korzystam z kilku źródeł. Skomplikowane wykroje, które muszą być perfekcyjnie dopasowane do sylwetki tworzę sama. Wykonuję je zgodnie z zadami konstrukcji i modelowania.</p>
+                                    <p>To dla mnie ogromna frajda :) Matematyczna część mojego umysłu jest w Disneylandzie. Jest to jednak żmudne i przypomina lekcje geometrii. Wykrój tworzy się wykreślając odcinki na podstawie wyliczeń ze ściągniętej miary. Jeśli nie jesteś ścisłowcem ten sposób może Cię nieźle zmęczyć. </p>
+                                </div>
+                                <a href="#" class="my-btn mx-auto align-center"><span>Czytaj dalej</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 align-center">
+                        <div class="card mx-auto">
+                            <div class="card-img-top img-container bg-item bg-item-4">
+                                <!-- <img src="images/post_3.jpg" alt="Artykuł" class="img-fluid portrait-img"> -->
+                            </div>
+                            <div class="card-content align-center">
+                                <h4 class="post-title">Lniana koszula na guziki - rady jak szyć</h4>
+                                <div class="post-content">
+                                    <p>Tym razem zupełnie inny projekt, który dał mi mnóstwo radości, ale też wymagał ode mnie dużo cierpliwości i poświęconego czasu. Uszyłam ją już bardzo dawno temu, ale teraz przyszła pora na podzielenie się z Wami. Część z Was już go widziała na blogu namaszynie. Postanowiłam wszystko zebrać w jedno, stąd blog łączny pod adresem kursyszycia i ponownie lniana koszula :)   Tkanina: len 100%</p>
+                                </div>
                                 <a href="#" class="my-btn mx-auto align-center"><span>Czytaj dalej</span></a>
                             </div>
                         </div>
@@ -141,22 +201,22 @@
             <!-- FACEBOOK HERE -->
         </section>
 
-        <section class="products" id="products">
-            <div class="container">
+        <section class="products d-none" id="products">
+            <div class="">
                 <h3 class="section-title">Tutaj tytuł</h3>
                 <p class="section-description mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, autem. Maiores aspernatur autem aperiam dicta? Et reprehenderit incidunt ab impedit similique, rerum nam ad repudiandae accusantium eum praesentium dolore quisquam?</p>
                 <div class="row justify-content-center">
-                    <div class="mt-5 mb-5 col-md-4 col-sm-12 d-flex align-items-stretch">
+                    <div class="mt-5 mb-5 mx-auto col-md-3 col-sm-12 d-flex align-items-stretch">
                         <div class="shop-item mx-auto">
                             <img src="images/post_3.jpg" alt="Item 1">
                         </div>
                     </div>
-                    <div class="mt-5 mb-5 col-md-4 col-sm-12 d-flex align-items-stretch">
+                    <div class="mt-5 mb-5 col-md-3 col-sm-12 d-flex align-items-stretch">
                         <div class="shop-item mx-auto">
                             <img src="images/post_1.jpg" alt="Item 1">
                         </div>
                     </div>
-                    <div class="mt-5 mb-5 col-md-4 col-sm-12 d-flex align-items-stretch">
+                    <div class="mt-5 mb-5 mx-auto col-md-3 col-sm-12 d-flex align-items-stretch">
                         <div class="shop-item mx-auto">
                             <img src="images/post_2.jpg" alt="Item 1">
                         </div>
@@ -174,6 +234,10 @@
             </div>
         </section>
     </div>
+
+    <footer></footer>
+    <script src="js/footer.js"></script>
+    <script src="js/blog-content-cropper.js"></script>
 
 </body>
 </html>

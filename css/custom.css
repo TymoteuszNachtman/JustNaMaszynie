@@ -47,14 +47,14 @@ body{
 /* SECTIONS */
 .logo{
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
+    padding: 3rem 0 2rem 0;
 }
 
 @media (max-width: 767.98px){
     .logo{
-        width: 80%;
+        width: 100%;
         max-width: 300px;
-        margin: 2rem 0;
     }
 }
 
@@ -67,6 +67,7 @@ body{
 }
 
 #nav .nav-link{
+    margin: 0 10px;
     color: #606060;
 }
 
@@ -86,11 +87,12 @@ section{
 }
 
 .section-title{
-    color: #606060;
+    color: #000;
     font-size: 3rem;
     margin-top: 4rem;
+    margin-bottom: 6rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .section-description{
@@ -109,8 +111,8 @@ section{
 
 #social-icons{
     position: absolute;
-    font-size: 3rem;
-    top: 2rem;
+    font-size: 2rem;
+    top: 3rem;
     left: 2rem ;
 }
 
@@ -118,9 +120,9 @@ section{
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    line-height: 5rem;
-    width: 5rem;
-    height: 5rem;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     border: 1px solid transparent;
     background-color: #000;
@@ -130,7 +132,7 @@ section{
 #social-icons a:first-child{
     background-color: #000000;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2rem;
     transition: all .3s ease;
 }
 
@@ -143,8 +145,9 @@ section{
 #social-icons a:nth-child(2){
     background-color: #000;
     color: #fff;
-    width: 5rem;
-    height: 5rem;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
 }
 
@@ -171,20 +174,33 @@ section{
     width: 100%;
 }
 
+.modal{
+    display: inline-block;
+    color: inherit;
+}
+
 .modals h3{
     font-size: 3.4rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .modals p{
     font-size: 2rem;
     font-weight: 400;
     text-align: justify;
+    margin: 1rem 0 1rem 0;
+}
+
+.modals ul li{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0;
 }
 
 .modals .btn{
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .card{
@@ -201,51 +217,23 @@ section{
 
 .img-container{
     width: 100%;
-    height: 80vh;
-    min-height: 400px;
-    max-height: 600px;
     overflow: hidden;
-    /* background-color: red; */
 }
 
-@media (max-width: 1199.98px){
-    .img-container{
-        height: 50vh;
-    }
+.img-container::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 @media (max-width: 991.98px){
     .card{
         max-width: 100%;
     }
-
-    .img-container{
-        min-height: 16rem;
-    }
-}
-
-@media (max-width: 767.98px){
-    .card{
-        max-width: 100%;
-    }
-
-    .img-container{
-        min-height: 16rem;
-    }
 }
 
 .portrait-img{
-    /* width: 100%; */
     height: 100%;
-}
-
-.img-container img{
-    /* max-width: 100%;
-    max-height:100%;
-    display: inline-block; /* Instead of display: block; */
-    /* margin: 0 auto;
-    vertical-align: middle; */
-    /* width: 100%; */
 }
 
 .bg-item{
@@ -255,19 +243,23 @@ section{
 }
 
 .bg-item-1{
-    background-image: url("../images/post_1.jpg");
+    background-image: url("../images/akcesoria.jpg");
 }
 
 .bg-item-2{
-    background-image: url("../images/post_2.jpg");
+    background-image: url("../images/domi.jpg");
 }
 
 .bg-item-3{
-    background-image: url("../images/post_3.jpg");
+    background-image: url("../images/gazety.jpg");
+}
+
+.bg-item-4{
+    background-image: url("../images/koszula.jpg");
 }
 
 .post-title{
-    color: #222;
+    color: #606060;
     padding: 2rem 0;
     font-size: 2.5rem;
     font-weight: 700;
@@ -279,10 +271,15 @@ section{
     padding: 5px 15px;
 }
 
+.post-content p{
+    font-size: 1.5rem;
+}
+
 .my-btn{
     display: block;
+    position: relative;
+    bottom: 0;
     border-radius: 4px;
-    background-color: #fff;
     color: #000;
     border: none;
     padding: 20px;
@@ -295,7 +292,7 @@ section{
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: all .5s;
+    /* transition: all .5s; */
 }
 
 .my-btn span:after{
@@ -303,8 +300,8 @@ section{
     position: absolute;
     opacity: 1;
     top: 0;
-    right: -20px;
-    transition: all .5s;
+    right: -30px;
+    /* transition: all .5s; */
 }
 
 .my-btn:hover{
@@ -314,12 +311,12 @@ section{
 }
 
 .my-btn:hover span{
-    padding-right: 25px;
+    /* padding-right: 25px; */
 }
 
 .my-btn:hover span:after{
     opacity: 1;
-    right: 0;
+    right: -30px;
 }
 
 .first-btn{
@@ -327,17 +324,18 @@ section{
     font-size: 1.8rem;
     font-weight: 700;
     color: #606060;
+    text-decoration: none;
 }
 
 .first-btn:hover{
     background-color: #fff;
     color: #e6a42c;
+    text-decoration: none;
 }
 
 .shop-item{
     padding: 5px;
     border: 2px solid #000;
-    height: 100%;
 }
 
 .shop-item img{
@@ -353,10 +351,107 @@ section{
 }
 
 .omnie{
-    background-color: #f2d4bc;
+    background-color: #efd9cb;
+    text-align: justify;
 }
 
 .omnie-img{
     width: 70%;
     min-width: 300px;
+}
+
+.omnie h3{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.omnie p{
+    font-size: 2rem;
+}
+
+.omnie ul{
+    list-style: none;
+    text-align: center;
+}
+
+.omnie ul li{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.odstep{
+    display: block;
+    margin: 3rem 0;
+    content: '&nbsp;';
+}
+
+.omnie-info{
+    max-width: 1000px;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.omnie-info p{
+    margin-bottom: 3rem;
+}
+
+.omnie-page-img{
+    width: 40%;
+    min-width: 200px;
+    max-width: 300px;
+    box-sizing: content-box;
+    padding-left: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.omnie-heading{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.a-btn{
+    margin: 0;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.a-btn:hover{
+    text-decoration: none;
+}
+
+.circle-image{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.omnie-linki{
+    max-width: 1000px;
+    font-size: 2.6rem;
+    text-align: center;
+    border: 1px solid #222;
+    padding: 2rem 0;
+}
+
+.omnie-linki p:first-child{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.omnie-linki li{
+    padding: .5rem 0;
+}
+
+footer{
+    background-color: #ebeae6;
+    color: #222;
+    font-family: inherit;
+    padding: 1rem;
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    text-align: center;
 }
