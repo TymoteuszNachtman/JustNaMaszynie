@@ -317,7 +317,7 @@ section{
     font-size: 1.6rem;
     font-weight: 700;
     padding: 1rem 2rem;
-    transition: color .3s;
+    transition: all .1s ease-in-out;
     color: #606060;
     margin-bottom: 10px;
 }
@@ -325,6 +325,7 @@ section{
 .second-btn:hover{
     color: #e6a42c;
     text-decoration: none;
+    border-bottom-width: 2px;
 }
 
 @media (max-width: 575.98px){
